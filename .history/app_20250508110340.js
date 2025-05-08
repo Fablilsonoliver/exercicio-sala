@@ -95,9 +95,9 @@ const readline = require("readline-sync");
 // vendaHotDogs(quantidade);
 
 
-//4 - Escreva uma função que remova todas as vogais de uma string de entrada.
-// Exemplo:
-// "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!"
+// //4 - Escreva uma função que remova todas as vogais de uma string de entrada.
+// // Exemplo:
+// // "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!"
 
 // function removeVogais(str) {
 //     return str.replace(/[aeiouAEIOU]/g, '');

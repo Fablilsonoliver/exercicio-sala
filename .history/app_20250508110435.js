@@ -99,32 +99,32 @@ const readline = require("readline-sync");
 // Exemplo:
 // "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!"
 
-// function removeVogais(str) {
-//     return str.replace(/[aeiouAEIOU]/g, '');
-// }
+function removeVogais(str) {
+    return str.replace(/[aeiouAEIOU]/g, '');
+}
 
-// // Solicita ao usuário para digitar a frase
-// let frase = readline.question("Digite uma frase para remover as vogais: ");
+// Solicita ao usuário para digitar a frase
+let frase = readline.question("Digite uma frase para remover as vogais: ");
 
-// // Chama a função e exibe o resultado
-// let resultado = removeVogais(frase);
-// console.log("Frase sem vogais:", resultado);
+// Chama a função e exibe o resultado
+let resultado = removeVogais(frase);
+console.log("Frase sem vogais:", resultado);
 
-// 6 - Faça um programa que leia 7 nomes de pessoas e guarde-os em um vetor.
-// No final, mostre uma listagem com todos os nomes informados, na ordem inversa daquela em que eles foram informados.
+6 - Faça um programa que leia 7 nomes de pessoas e guarde-os em um vetor.
+No final, mostre uma listagem com todos os nomes informados, na ordem inversa daquela em que eles foram informados.
 
-// let nomes = [];
-//     // Lê 7 nomes do usuário
-// for (let i = 0; i < 7; i++) {
-//     let nome = readline.question(`Digite o nome da pessoa ${i + 1}: `);
-//     nomes.push(nome);
-// }
+let nomes = [];
+    // Lê 7 nomes do usuário
+for (let i = 0; i < 7; i++) {
+    let nome = readline.question(`Digite o nome da pessoa ${i + 1}: `);
+    nomes.push(nome);
+}
 
-// // Exibe os nomes na ordem inversa
-// console.log("\nNomes na ordem inversa:");
-// for (let i = nomes.length - 1; i >= 0; i--) {
-//     console.log(nomes[i]);
+// Exibe os nomes na ordem inversa
+console.log("\nNomes na ordem inversa:");
+for (let i = nomes.length - 1; i >= 0; i--) {
+    console.log(nomes[i]);
 
 
-// }
+}
 

@@ -36,15 +36,15 @@ const readline = require("readline-sync");
 //     case "C":
 //         console.log("Cadastrar");
 //         break;
-
+        
 //     case "R":
 //         console.log("Buscar");
 //         break;
-
+        
 //     case "U":
 //         console.log("Atualizar");
 //         break;
-
+        
 //     case "D":
 //         console.log("Excluir");
 //         break;
@@ -57,47 +57,47 @@ const readline = require("readline-sync");
 // menuDeCadastro();
 
 
-// 3 - Crie uma função vendaHotDogs que recebe n(quantidade de hotdogs).Dependendo da quantidade, o preço unitário varia:
-//     Quantidade de hotdogs
-//     Preço por unidade(centavos)
-//     n < 5
-//     100
-//     5 ≤ n < 10
-//     95
-//     n ≥ 10
-//     90
+        3 - Crie uma função vendaHotDogs que recebe n (quantidade de hotdogs). Dependendo da quantidade, o preço unitário varia:
+        Quantidade de hotdogs
+        Preço por unidade (centavos)
+        n < 5
+        100
+        5 ≤ n < 10
+        95
+        n ≥ 10
+        90
+         
+        function vendaHotDogs (n) {
+            let precoUni;
+        
+            if ( n < 5) {
+                precoUni = 100;
+            }
+        
+            else if (n >= 5 && n < 10){
+                precoUni = 95;
+            }
+        
+            else {
+                precoUni = 90;
+            }
+        
+        
+          console.log(`\nVocê comprou ${n} hotdog(s).`);
+          console.log(`Preço unitário: ${precoUni} centavos`);
+           
+        }
+        
+        // Solicita ao usuário a quantidade de hotdogs
+        let quantidade = parseInt(readline.question("Digite a quantidade de hotdogs que deseja comprar: "));
+        
+        // Chama a função
+        vendaHotDogs(quantidade);
 
-//     function vendaHotDogs(n) {
-//     let precoUni;
 
-//     if (n < 5) {
-//         precoUni = 100;
-//     }
-
-//     else if (n >= 5 && n < 10) {
-//         precoUni = 95;
-//     }
-
-//     else {
-//         precoUni = 90;
-//     }
-
-
-//     console.log(`\nVocê comprou ${n} hotdog(s).`);
-//     console.log(`Preço unitário: ${precoUni} centavos`);
-
-// }
-
-// // Solicita ao usuário a quantidade de hotdogs
-// let quantidade = parseInt(readline.question("Digite a quantidade de hotdogs que deseja comprar: "));
-
-// // Chama a função
-// vendaHotDogs(quantidade);
-
-
-//4 - Escreva uma função que remova todas as vogais de uma string de entrada.
-// Exemplo:
-// "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!"
+// //4 - Escreva uma função que remova todas as vogais de uma string de entrada.
+// // Exemplo:
+// // "This website is for losers LOL!" => "Ths wbst s fr lsrs LL!"
 
 // function removeVogais(str) {
 //     return str.replace(/[aeiouAEIOU]/g, '');
